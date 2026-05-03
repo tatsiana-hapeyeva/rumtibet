@@ -8,7 +8,15 @@
   flex-direction: column;
 }
 
-.header__container,
+.header__container {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .hero__container,
 .about__container,
 .advantages__container {
@@ -24,12 +32,14 @@
   align-items: center;
 }
 
-.header__link {
-  color: var(--color-accent-support);
+.header__nav {
+  display: flex;
+  gap: 24px;
 }
 
-.header__logo {
-  margin-right: 212px;
+.header__link {
+  color: var(--color-accent-support);
+  white-space: nowrap;
 }
 
 .hero {
@@ -58,49 +68,19 @@
 
 .tour-search__row {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr)) auto;
   gap: 24px;
-  max-width: 1005px;
   width: 100%;
-  margin: 0 auto;
   align-items: stretch;
 }
 
-.tour-search__button {
-  padding: 12px 24px;
-  border: none;
-  border-radius: 4px;
-  background: var(--color-accent-support);
-  font: inherit;
-}
-
-.tour-search__label {
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-  border: 1px solid var(--color-accent-support);
-  border-radius: 8px;
-  padding: 16px;
-  color: var(--color-accent-support);
-  position: relative;
-}
-
-.tour-search__label svg {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  right: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-}
 .tour-search__group:last-child {
-  align-self: start;
+  width: 213px;
 }
 
-.tour-search__help {
-  color: var(--color-accent-support);
-  font-size: 14px;
-  gap: 8px;
+.tour-search__group:last-child button {
+  width: 100%;
+  min-height: 52px;
 }
 
 .about {
@@ -154,4 +134,8 @@
 .advantages__container {
   display: flex;
   gap: 90px;
+}
+
+.about__discription-text {
+  padding-block: 40px;
 }

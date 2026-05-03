@@ -1,89 +1,17 @@
 import "./assets/styles/index.css";
 import "./assets/styles/main.css";
-import { IoIosArrowDown } from "react-icons/io";
-import { IoCalendarClearOutline } from "react-icons/io5";
+import "./assets/styles/normalize.css";
+
+import { Header } from "./pages/header";
+import { Hero } from "./pages/hero";
+import Button from "./components/button";
 
 function App() {
   return (
     <div>
       <div className="main__image">
-        <header className="header">
-          <div className="header__container">
-            <nav className="header__menu">
-              <div className="header__logo">
-                <img src="/images/logo.png" alt="Logo" />
-              </div>
-
-              <a className="header__link" href="/">
-                Главная
-              </a>
-              <a className="header__link" href="/">
-                Про гида
-              </a>
-              <a className="header__link" href="/">
-                Программа тура
-              </a>
-              <a className="header__link" href="/">
-                Стоимость
-              </a>
-              <a className="header__link" href="/">
-                Блог
-              </a>
-              <a className="header__link" href="/">
-                Контакты
-              </a>
-              <button className="button">Консультация</button>
-            </nav>
-          </div>
-        </header>
-
-        <section className="hero">
-          <div className="hero__container">
-            <p className="hero__slogan">
-              Насладись прогулкой в горах с командой единомышленников
-            </p>
-
-            <div className="hero__search">
-              <div className="tour-search__row">
-                <div className="tour-search__group">
-                  <label className="tour-search__label">
-                    Локация для тура
-                    <span className="tour-search__icon">
-                      <IoIosArrowDown />
-                    </span>
-                  </label>
-                  <p className="tour-search__help">выберите из списка</p>
-                </div>
-
-                <div className="tour-search__group">
-                  <label className="tour-search__label">
-                    Дата похода
-                    <span className="tour-search__icon">
-                      <IoCalendarClearOutline />
-                    </span>
-                  </label>
-                  <p className="tour-search__help">укажите диапазон</p>
-                </div>
-
-                <div className="tour-search__group">
-                  <label className="tour-search__label">
-                    Участники
-                    <span className="tour-search__icon">
-                      <IoIosArrowDown />
-                    </span>
-                  </label>
-                  <p className="tour-search__help">минимум 4 человека</p>
-                </div>
-
-                <div className="tour-search__group">
-                  <button className="tour-search__button">
-                    Найти программу
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Header />
+        <Hero />
       </div>
 
       <section className="about">
@@ -109,14 +37,14 @@ function App() {
           <div className="about__discription">
             <h2>о нашем походе</h2>
             <h1>Исследуйте все горные массивы мира вместе с нами</h1>
-            <p>
+            <p className="about__discription-text">
               Его корни уходят в один фрагмент классической латыни 45 года н.э.,
               то есть более двух тысячелетий назад. Ричард МакКлинток, профессор
               латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из
               самых странных слов в Lorem Ipsum, "consectetur" и занялся его
               поисками в классической латинской литературе.
             </p>
-            <button className="button">Программа тура</button>
+            <Button>Программа тура</Button>
           </div>
         </div>
       </section>

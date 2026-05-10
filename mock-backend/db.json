@@ -1,0 +1,38 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Озеро возле гор",
+      "subtitle": "романтическое приключение",
+      "price": 480,
+      "currency": "$",
+      "rating": 4.9,
+      "image": "/images/lake.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Ночь в горах",
+      "subtitle": "в компании друзей",
+      "price": 500,
+      "currency": "$",
+      "rating": 4.5,
+      "image": "/images/night-mountains.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Йога в горах",
+      "subtitle": "для тех, кто заботится о себе",
+      "price": 230,
+      "currency": "$",
+      "rating": 5,
+      "image": "/images/yoga.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Tatsiana",
+      "email": "t@example.com"
+    }
+  ]
+}

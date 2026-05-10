@@ -1,26 +1,16 @@
-import MuiButton from "@mui/material/Button";
+import MuiButton, {
+  type ButtonProps as MuiButtonProps,
+} from "@mui/material/Button";
 
-type ButtonProps = {
-  children: React.ReactNode;
-  color?: "dark" | "light";
-  sx?: object;
+type Props = MuiButtonProps & {
+  tone?: "dark" | "light";
 };
 
-export default function Button({
-  children,
-  color = "dark",
-  sx,
-  ...props
-}: ButtonProps) {
+export default function Button({ tone = "dark", sx, ...props }: Props) {
   return (
     <MuiButton
       sx={{
-        padding: "12px 24px",
-        border: "none",
-        borderRadius: "4px",
-        font: "inherit",
-        textTransform: "none",
-        ...(color === "dark"
+        ...(tone === "dark"
           ? {
               background: "var(--color-accent-secondary)",
               color: "var(--color-accent-support)",
@@ -32,8 +22,6 @@ export default function Button({
         ...sx,
       }}
       {...props}
-    >
-      {children}
-    </MuiButton>
+    />
   );
 }

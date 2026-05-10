@@ -1,0 +1,11 @@
+{
+  "name": "test-backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "json-server --watch db.json --port 3002 --host 0.0.0.0"
+  },
+  "devDependencies": {
+    "json-server": "^0.17.4"
+  }
+}

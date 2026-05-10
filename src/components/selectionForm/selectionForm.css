@@ -10,8 +10,3 @@
   color: var(--color-accent-support);
   font: inherit;
 }
-
-.selection-form__help.MuiFormHelperText-root {
-  color: var(--color-accent-support);
-  font-size: 14px;
-}

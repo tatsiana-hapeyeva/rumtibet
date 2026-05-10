@@ -17,29 +17,11 @@
   justify-content: space-between;
   align-items: center;
 }
-.hero__container,
-.about__container,
-.advantages__container {
-  max-width: 1180px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 16px;
-}
 
 .header__menu {
   display: flex;
   gap: 24px;
   align-items: center;
-}
-
-.header__nav {
-  display: flex;
-  gap: 24px;
-}
-
-.header__link {
-  color: var(--color-accent-support);
-  white-space: nowrap;
 }
 
 .hero {
@@ -66,21 +48,21 @@
   padding: 40px;
 }
 
+.hero__mobile-button {
+  display: none;
+}
+
 .tour-search__row {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr)) auto;
   gap: 24px;
   width: 100%;
-  align-items: stretch;
+  align-items: start;
 }
 
-.tour-search__group:last-child {
-  width: 213px;
-}
-
-.tour-search__group:last-child button {
-  width: 100%;
-  min-height: 52px;
+.tour-search__group {
+  display: flex;
+  flex-direction: column;
 }
 
 .about {
@@ -129,6 +111,7 @@
 
 .advantages {
   background-color: var(--color-section);
+  padding: 80px 0 100px;
 }
 
 .advantages__container {
@@ -138,4 +121,81 @@
 
 .about__discription-text {
   padding-block: 40px;
+}
+
+.advantages__container {
+  display: flex;
+  gap: 120px;
+  align-items: center;
+}
+
+.advantages__content {
+  flex: 1 1 0;
+}
+
+.advantages__photos {
+  flex: 0 0 510px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.advantages__photo {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+}
+
+.advantages__photo:nth-child(1),
+.advantages__photo:nth-child(4) {
+  border-radius: 0 50px 0 50px;
+}
+
+.advantages__photo:nth-child(2),
+.advantages__photo:nth-child(3) {
+  border-radius: 50px 0 50px 0;
+}
+
+.advantages__content-text {
+  padding-top: 40px;
+}
+
+.advantages__points {
+  padding-block: 40px;
+}
+
+.directions {
+  padding: 80px 0 100px;
+}
+
+.directions__content {
+  text-align: center;
+}
+
+.directions__cards {
+  padding-bottom: 40px;
+}
+
+@media (max-width: 390px) {
+  .header__button {
+    display: none;
+  }
+
+  .hero__search {
+    display: none;
+  }
+
+  .hero__mobile-button {
+    display: block;
+  }
+
+  .hero__slogan {
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: normal;
+    font-size: 24px;
+    letter-spacing: 0;
+  }
 }

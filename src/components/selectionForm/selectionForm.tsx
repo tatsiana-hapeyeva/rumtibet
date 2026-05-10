@@ -1,12 +1,9 @@
 import { useState } from "react";
 import type { Dayjs } from "dayjs";
-import FormHelperText from "@mui/material/FormHelperText";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Popover from "@mui/material/Popover";
 import { DateRangeCalendar } from "@mui/x-date-pickers-pro/DateRangeCalendar";
-
-import "./selectionForm.css";
 
 type Option = {
   value: string;
@@ -15,7 +12,6 @@ type Option = {
 
 type SelectionFormProps = {
   placeholder: string;
-  help: string;
   IconComponent: React.ElementType;
   mode?: "select" | "date";
   value?: string;
@@ -27,7 +23,6 @@ type SelectionFormProps = {
 
 export function SelectionForm({
   placeholder,
-  help,
   IconComponent,
   mode = "select",
   value = "",
@@ -60,10 +55,25 @@ export function SelectionForm({
         : placeholder;
 
   return (
-    <div className="tour-search__group">
-      <button type="button" className="selection-form" onClick={handleOpen}>
-        <span className="selection-form__value">{displayValue}</span>
-        <span className="selection-form__icon">
+    <div>
+      <button
+        type="button"
+        onClick={handleOpen}
+        style={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          padding: "16px",
+          border: "1px solid var(--color-accent-support)",
+          borderRadius: "8px",
+          background: "transparent",
+          color: "var(--color-accent-support)",
+          font: "inherit",
+        }}
+      >
+        <span>{displayValue}</span>
+        <span>
           <IconComponent />
         </span>
       </button>
@@ -116,8 +126,6 @@ export function SelectionForm({
           />
         </Popover>
       )}
-
-      <FormHelperText className="selection-form__help">{help}</FormHelperText>
     </div>
   );
 }

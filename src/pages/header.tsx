@@ -1,4 +1,3 @@
-// pages/Header.tsx
 import { Logo } from "../components/logo";
 import { Navigation } from "../components/navigation";
 import Button from "../components/button";
@@ -10,7 +9,9 @@ export function Header() {
         <Logo />
         <nav className="header__menu">
           <Navigation />
-          <Button>Консультация</Button>
+          <div className="header__button">
+            <Button>Консультация</Button>
+          </div>
         </nav>
       </div>
     </header>

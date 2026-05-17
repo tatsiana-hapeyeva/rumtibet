@@ -46,6 +46,14 @@ const theme = createTheme({
       color: "#FDFDFD",
     },
 
+    h5: {
+      fontFamily: '"Nunito Sans", sans-serif',
+      fontSize: "24px",
+      lineHeight: "32px",
+      fontWeight: 700,
+      color: "#18121E",
+    },
+
     body1: {
       fontFamily: '"Nunito Sans", sans-serif',
       fontSize: "18px",

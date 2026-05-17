@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
+import { useQuery } from "@tanstack/react-query";
 import Typography from "@mui/material/Typography";
 import axios from "axios";
+import { API_URL } from "../shared/config/baseUrl.js";
 
 import { SectionContainer } from "../components/sectionContainer";
 import { SectionHeading } from "../components/sectionHeading";
@@ -12,14 +13,24 @@ type Product = TourCardProps & {
 };
 
 export function Directions() {
-  const [products, setProducts] = useState<Product[]>([]);
+  const {
+    data: products = [],
+    isPending,
+    isError,
+    error,
+  } = useQuery({
+    queryKey: ["products"],
+    queryFn: async () => {
+      const response = await axios.get<Product[]>(`${API_URL}/products`);
+      return response.data;
+    },
+  });
 
-  useEffect(() => {
-    axios
-      .get("http://localhost:3002/products")
-      .then((response) => setProducts(response.data))
-      .catch((error) => console.error(error));
-  }, []);
+  if (isPending) return null;
+  if (isError) {
+    console.error(error);
+    return null;
+  }
 
   return (
     <section className="directions">

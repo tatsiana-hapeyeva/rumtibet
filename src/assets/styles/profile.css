@@ -1,0 +1,29 @@
+.profile-page {
+  background-color: var(--color-section);
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+
+.profile-page__column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.profile-page__main {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 40px;
+  align-items: start;
+}
+
+.profile-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.profile-page__switch {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  align-items: center;
+}

@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Озеро возле гор",
       "subtitle": "романтическое приключение",
       "price": 480,
@@ -10,7 +10,7 @@
       "image": "/images/lake.jpg"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Ночь в горах",
       "subtitle": "в компании друзей",
       "price": 500,
@@ -19,7 +19,7 @@
       "image": "/images/night-mountains.jpg"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Йога в горах",
       "subtitle": "для тех, кто заботится о себе",
       "price": 230,
@@ -30,9 +30,265 @@
   ],
   "users": [
     {
-      "id": 1,
-      "name": "Tatsiana",
-      "email": "t@example.com"
+      "id": "1",
+      "photo": "/images/user-avatar.jpg",
+      "name": "Иван",
+      "surname": "Иванов",
+      "email": "ivan@example.com",
+      "city": "Минск",
+      "about": "Путешественник",
+      "notifications": true
     }
-  ]
+  ],
+
+  "locations": [
+    { "id": 1, "name": "Казахстан, Алатау" },
+    { "id": 2, "name": "Непал, Гималаи" },
+    { "id": 3, "name": "Кыргызстан, озёра" },
+    { "id": 4, "name": "Россия, Алтай" },
+    { "id": 5, "name": "Грузия, Сванетия" }
+  ],
+  "participantPresets": [
+    { "id": 1, "count": 4, "label": "4 человека" },
+    { "id": 2, "count": 6, "label": "6 человек" },
+    { "id": 3, "count": 8, "label": "8 человек" },
+    { "id": 4, "count": 10, "label": "10 человек" },
+    { "id": 5, "count": 12, "label": "12 человек" }
+  ],
+  "programs": [
+    {
+      "id": 1,
+      "title": "Алатау: озёра и перевалы",
+      "slug": "alatau-lakes",
+      "locationId": 1,
+      "startDate": "2026-06-10",
+      "endDate": "2026-06-16",
+      "minParticipants": 4,
+      "maxParticipants": 12,
+      "priceFrom": 420,
+      "currency": "$",
+      "shortDescription": "Неделя похода с ночёвками у горных озёр.",
+      "imageUrl": "https://placehold.co/600x400/png"
+    },
+    {
+      "id": 2,
+      "title": "Непал: классический трек",
+      "slug": "nepal-classic-trek",
+      "locationId": 2,
+      "startDate": "2026-09-05",
+      "endDate": "2026-09-18",
+      "minParticipants": 6,
+      "maxParticipants": 14,
+      "priceFrom": 890,
+      "currency": "$",
+      "shortDescription": "Двухнедельный маршрут с гидом и логистикой.",
+      "imageUrl": "https://placehold.co/600x400/png"
+    },
+    {
+      "id": 3,
+      "title": "Кыргызстан: конные переходы",
+      "slug": "kyrgyzstan-horse",
+      "locationId": 3,
+      "startDate": "2026-07-20",
+      "endDate": "2026-07-27",
+      "minParticipants": 4,
+      "maxParticipants": 10,
+      "priceFrom": 550,
+      "currency": "$",
+      "shortDescription": "Семь дней в горах с лошадьми и юртами.",
+      "imageUrl": "https://placehold.co/600x400/png"
+    },
+    {
+      "id": 4,
+      "title": "Алтай: Мультинские озёра",
+      "slug": "altai-multa",
+      "locationId": 4,
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-09",
+      "minParticipants": 4,
+      "maxParticipants": 12,
+      "priceFrom": 380,
+      "currency": "$",
+      "shortDescription": "Набор высоты и лагеря у ледниковых озёр.",
+      "imageUrl": "https://placehold.co/600x400/png"
+    },
+    {
+      "id": 5,
+      "title": "Сванетия: башни и тропы",
+      "slug": "svaneti-towers",
+      "locationId": 5,
+      "startDate": "2026-05-15",
+      "endDate": "2026-05-22",
+      "minParticipants": 4,
+      "maxParticipants": 8,
+      "priceFrom": 620,
+      "currency": "$",
+      "shortDescription": "Комфортный поход среди скал и деревень.",
+      "imageUrl": "https://placehold.co/600x400/png"
+    },
+    {
+      "id": 6,
+      "title": "Алатау: выходные ущельем",
+      "slug": "alatau-weekend",
+      "locationId": 1,
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-04",
+      "minParticipants": 4,
+      "maxParticipants": 8,
+      "priceFrom": 190,
+      "currency": "$",
+      "shortDescription": "Короткая программа на 4 дня.",
+      "imageUrl": "https://placehold.co/600x400/png"
+    }
+  ],
+  "destinations": [
+    {
+      "id": 1,
+      "title": "Озеро возле гор",
+      "subtitle": "романтическое приключение",
+      "price": 480,
+      "rating": 4.9,
+      "imageUrl": "https://placehold.co/400x600/png"
+    },
+    {
+      "id": 2,
+      "title": "Ночь в горах",
+      "subtitle": "в компании друзей",
+      "price": 500,
+      "rating": 4.5,
+      "imageUrl": "https://placehold.co/400x600/png"
+    },
+    {
+      "id": 3,
+      "title": "Йога в горах",
+      "subtitle": "для тех, кто заботится о себе",
+      "price": 230,
+      "rating": 5,
+      "imageUrl": "https://placehold.co/400x600/png"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Красивая Италия, какая она в реальности?",
+      "description": "Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.",
+      "date": "01/04/2023",
+      "imageUrl": "https://placehold.co/300x300/png"
+    },
+    {
+      "id": 2,
+      "title": "Долой сомнения! Весь мир открыт для вас!",
+      "description": "Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации...",
+      "date": "01/04/2023",
+      "imageUrl": "https://placehold.co/300x300/png"
+    },
+    {
+      "id": 3,
+      "title": "Как подготовиться к путешествию в одиночку?",
+      "description": "Для современного мира базовый вектор развития предполагает.",
+      "date": "01/04/2023",
+      "imageUrl": "https://placehold.co/300x300/png"
+    },
+    {
+      "id": 4,
+      "title": "Индия ... летим?",
+      "description": "Для современного мира базовый.",
+      "date": "01/04/2023",
+      "imageUrl": "https://placehold.co/300x300/png"
+    }
+  ],
+  "gallery": [
+    {
+      "id": 1,
+      "imageUrl": "https://ywriting.byu.edu/wp-content/uploads/2025/08/AI-Art-Cover-PhotoKateShirtsArticlePhoto.png"
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://thumbs.dreamstime.com/b/generative-ai-art-shows-vibrant-glowing-tree-purple-red-foliage-roots-extend-electric-lines-resembling-neural-pathways-human-410951856.jpg"
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://i0.wp.com/teyxo.com/lifestyle/wp-content/uploads/2025/02/AI-and-the-Future-of-Art_-Can-a-Machine-Be-Creative_-1-1.jpg?resize=1020%2C600&ssl=1"
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://pixel-gallery.co.uk/cdn/shop/articles/ai-art-is-art-ai-artists-are-artists-a-definitive-case-735435.png?v=1748962733"
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://www.elegantthemes.com/blog/wp-content/uploads/2023/07/history-of-AI-art.jpg"
+    },
+    {
+      "id": 6,
+      "imageUrl": "https://blogs-cdn.imagine.art/ai_image_generator_hero_image_57699a1f24.png"
+    }
+  ],
+  "features": [
+    {
+      "id": 1,
+      "title": "Опытный гид",
+      "description": "Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.",
+      "icon": "guide"
+    },
+    {
+      "id": 2,
+      "title": "Безопасный поход",
+      "description": "Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.",
+      "icon": "shield"
+    },
+    {
+      "id": 3,
+      "title": "Лояльные цены",
+      "description": "Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.",
+      "icon": "price"
+    }
+  ],
+  "contacts": {
+    "company": "Компания «РумТибет»",
+    "description": "Организация авторских горных походов и туров для небольших групп.",
+    "email": "tours@rumtibet-demo.local",
+    "phone": "+7 (903) 742-91-63",
+    "socials": [
+      {
+        "id": 1,
+        "name": "Telegram",
+        "url": "https://t.me"
+      },
+      {
+        "id": 2,
+        "name": "VK",
+        "url": "https://vk.com"
+      },
+      {
+        "id": 3,
+        "name": "YouTube",
+        "url": "https://www.youtube.com"
+      },
+      {
+        "id": 4,
+        "name": "Pinterest",
+        "url": "https://www.pinterest.com"
+      },
+      {
+        "id": 5,
+        "name": "Instagram",
+        "url": "https://www.instagram.com"
+      }
+    ]
+  },
+  "footerLinks": {
+    "services": [
+      { "id": 1, "title": "Прогулки в горы летом" },
+      { "id": 2, "title": "Зимние походы в горы" },
+      { "id": 3, "title": "Посещение храмов в горах" },
+      { "id": 4, "title": "Экстремальные виды туризма" },
+      { "id": 5, "title": "Походы в джунглях Амазонии", "isNew": true }
+    ],
+    "important": [
+      { "id": 1, "title": "Как собрать в долгий поход?" },
+      { "id": 2, "title": "Жизненно важные предметы для похода" },
+      { "id": 3, "title": "Медицинская страховка, гарантии безопасности" },
+      { "id": 4, "title": "Если вы врач - загляните сюда" }
+    ]
+  }
 }

@@ -177,6 +177,15 @@
   padding-bottom: 40px;
 }
 
+.blog__container {
+  background-color: var(--color-section);
+  padding-block: 80px 100px;
+}
+
+.blog__content {
+  text-align: center;
+}
+
 @media (max-width: 390px) {
   .header__button {
     display: none;
